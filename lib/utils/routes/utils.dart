@@ -5,6 +5,14 @@ import 'package:another_flushbar/flushbar.dart';
 import 'package:mvvm/res/components/colors.dart';
 
 class Utils {
+  static double averageRating(List<int> ratings) {
+    var avgRating = 0.0;
+    for (int i = 0; i < ratings.length; i++) {
+      avgRating = avgRating + ratings[i];
+    }
+    return double.parse((avgRating / ratings.length).toStringAsFixed(1));
+  }
+
   static void focusNode(
       BuildContext context, FocusNode current, FocusNode focusNext) {
     current.unfocus();
