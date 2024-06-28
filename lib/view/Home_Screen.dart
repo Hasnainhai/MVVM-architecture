@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mvvm/data/response/status.dart';
-import 'package:mvvm/repository/home_repo.dart';
 import 'package:mvvm/utils/routes/routes_name.dart';
 import 'package:mvvm/utils/routes/utils.dart';
 import 'package:mvvm/view_model/home_view_model.dart';
